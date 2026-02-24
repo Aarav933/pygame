@@ -15,7 +15,7 @@ class Sprite(pygame.sprite.Sprite):
         self.image = pygame.Surface([height,width])
         self.image.fill(color)
         self.rect = self.image.get_rect()
-        self.velocity = [random.choice([-1,1]),random.choice([-1,1])]
+        self.velocity = [random.choice([-10,10]),random.choice([-10,10])]
     def update(self):
         self.rect.move_ip(self.velocity)
         boundaryhit = False
@@ -34,7 +34,7 @@ def changebgcolor():
     global bgcolor
     bgcolor = random.choice([BLUE,LIGHTBLUE,DARKBLUE])
 allspritelist = pygame.sprite.Group()
-sp1 = Sprite(WHITE, 50,50)
+sp1 = Sprite(WHITE, 10,10)
 sp1.rect.x = random.randint(0,480)
 sp1.rect.y = random.randint(0,380)
 allspritelist.add(sp1)
