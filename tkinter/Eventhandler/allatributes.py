@@ -1,0 +1,15 @@
+from tkinter import*
+from tkinter import messagebox
+root =Tk()
+root.geometry("200x200")
+label = Label(root, text="practice task")
+label.pack()
+messagebox.askokcancel("askokcancle", "cancel")
+messagebox.askquestion("askquestion?")
+messagebox.askretrycancel("askretrycancle")
+messagebox.askyesno("askyesno", "no")
+messagebox.askyesnocancel("askyesnocancle", "cancel")
+messagebox.showerror("Error")
+messagebox.showinfo("showinfo")
+messagebox.showwarning("Warning!")
+root.mainloop()
