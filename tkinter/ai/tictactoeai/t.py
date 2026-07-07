@@ -80,6 +80,7 @@ def checkdraw(board):
             return False
     return True
 
+# ---------------- MAIN GAME ----------------
 
 while True:
 
