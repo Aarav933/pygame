@@ -1,5 +1,5 @@
 import cv2
-image = cv2.imread('car.jpg')
+image = cv2.imread('tree.jpg')
 grayimage = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 resizedimage = cv2.resize(grayimage, (500,500))
 cv2.imshow('Resized Image', resizedimage)
